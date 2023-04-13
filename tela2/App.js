@@ -1,84 +1,78 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, TouchableOpacity, ScrollView } from 'react-native';
-import { Feather } from '@expo/vector-icons';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 
-const services = [
-  { id: '1', name: 'Corte de cabelo masculino', price: 'R$ 40,00' },
-  { id: '2', name: 'Barba', price: 'R$ 30,00' },
-  { id: '3', name: 'Corte de cabelo feminino', price: 'R$ 80,00' },
-  { id: '4', name: 'Pacote completo (corte de cabelo e barba)', price: 'R$ 70,00' },
-];
+const LoginForm = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-export default function App() {
-  const [selected, setSelected] = useState(null);
+  const handleUsernameChange = (inputUsername) => {
+    setUsername(inputUsername);
+  };
+
+  const handlePasswordChange = (inputPassword) => {
+    setPassword(inputPassword);
+  };
+
+  const handleSubmit = () => {
+    // Aqui você pode fazer algo com os valores inseridos nos campos, como enviar uma requisição para um servidor para verificar as credenciais do usuário.
+    console.log(`Username: ${username}, Password: ${password}`);
+  };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Serviços oferecidos:</Text>
-      <ScrollView style={styles.scroll}>
-        <FlatList data={services}
-          renderItem={({ item }) => (
-            <TouchableOpacity onPress={() => setSelected(item.id)}>
-              <View style={[styles.item, selected === item.id && styles.selected]}>
-                <Text style={styles.title}>{item.name}</Text>
-                <Text style={styles.price}>{item.price}</Text>
-                {selected === item.id && <Feather name="check-circle" size={24} color="green" />}
-              </View>
-            </TouchableOpacity>
-          )}
-          keyExtractor={(item) => item.id}
-        />
-      </ScrollView>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Agendar</Text>
+      <Text style={styles.title}>Login</Text>
+      <TextInput
+        style={styles.input}
+        value={username}
+        onChangeText={handleUsernameChange}
+        placeholder="Nome de usuário"
+        autoCompleteType="username"
+      />
+      <TextInput
+        style={styles.input}
+        value={password}
+        onChangeText={handlePasswordChange}
+        placeholder="Senha"
+        secureTextEntry={true}
+        autoCompleteType="password"
+      />
+      <TouchableOpacity style={styles.button} onPress={handleSubmit}>
+        <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#fff',
   },
-  heading: {
+  title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
-    textAlign: "center"
   },
-  scroll: {
-    flex: 1,
-  },
-  item: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
-  },
-  selected: {
-    backgroundColor: '#f0f0f0',
-  },
-  title: {
-    flex: 1,
-    fontSize: 16,
-  },
-  price: {
-    fontSize: 16,
-    fontWeight: 'bold',
+  input: {
+    height: 40,
+    width: 250,
+    borderColor: 'gray',
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    marginBottom: 10,
   },
   button: {
     backgroundColor: 'blue',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
-    alignItems: 'center',
-    marginTop: 20,
   },
   buttonText: {
     color: '#fff',
     fontSize: 18,
   },
 });
+
+export default LoginForm;

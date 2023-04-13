@@ -3,10 +3,20 @@ import { StyleSheet, Text, View, FlatList, TouchableOpacity, ScrollView } from '
 import { Feather } from '@expo/vector-icons';
 
 const services = [
-  { id: '1', name: 'Corte de cabelo masculino', price: 'R$ 50,00' },
-  { id: '2', name: 'Barba', price: 'R$ 35,00' },
-  { id: '3', name: 'Corte de cabelo feminino', price: 'R$ 80,00' },
-  { id: '4', name: 'Pacote completo (corte de cabelo e barba)', price: 'R$ 80,00' },
+  { id: '1', name: 'Corte de cabelo masculino', price: 'R$ 40,00' },
+  { id: '2', name: 'Corte de cabelo feminino', price: 'R$ 30,00' },
+  { id: '3', name: 'Barba', price: 'R$ 80,00' },
+  { id: '4', name: 'Cabelo e Barba', price: 'R$ 70,00' },
+  { id: '5', name: 'Corte Americano', price: 'R$ 35,00' },
+  { id: '6', name: 'Corte militar', price: 'R$ 30,00' },
+  { id: '7', name: 'Corte Degradê', price: 'R$ 45,00' },
+  { id: '8', name: 'Corte Moicano', price: 'R$ 40,00' },
+  { id: '9', name: 'Corte sufista', price: 'R$ 37,00' },
+  { id: '10', name: 'Corte Shaggy', price: 'R$ 49,50' },
+  { id: '11', name: 'Corte Pompadour', price: 'R$ 50,00' },
+  { id: '12', name: 'Corte Jaca liso', price: 'R$ 34,00' },
+  { id: '13', name: 'Corte maracá', price: 'R$ 30,00' },
+
 ];
 
 export default function App() {
@@ -14,9 +24,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Serviços oferecidos:</Text>
-      <ScrollView style={styles.scroll}>
-        <FlatList data={services}
+      <Text style={styles.heading}>Serviços oferecidos</Text>
+      <View style={styles.serviceContainer}>
+        <FlatList
+          data={services}
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => setSelected(item.id)}>
               <View style={[styles.item, selected === item.id && styles.selected]}>
@@ -28,7 +39,7 @@ export default function App() {
           )}
           keyExtractor={(item) => item.id}
         />
-      </ScrollView>
+      </View>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Agendar</Text>
       </TouchableOpacity>
@@ -48,8 +59,10 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: "center"
   },
-  scroll: {
-    flex: 1,
+  serviceContainer: {
+    backgroundColor: '#f0f0f0',
+    borderRadius: 10,
+    padding: 10,
   },
   item: {
     flexDirection: 'row',
