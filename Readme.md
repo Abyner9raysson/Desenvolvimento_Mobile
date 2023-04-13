@@ -72,4 +72,4 @@ Uma tela de login e senha, onde o cliente pode digitar o seu e-mail e a sua senh
 
 ### Link Trello
 
-[WorkSpace trello](https://trello.com/pt-BR?&aceid=&adposition=&adgroup=148159506607&campaign=19269516466&creative=641463051732&device=c&keyword=trello&matchtype=e&network=g&placement=&ds_kids=p74543507295&ds_e=GOOGLE&ds_eid=700000001557344&ds_e1=GOOGLE&gad=1&gclid=CjwKCAjwrdmhBhBBEiwA4Hx5gzAPmwHz5QZHoWLHMUdIYcHNC2UbNqffCxuuuP6fxxAyIBm5TJdT4hoCblkQAvD_BwE&gclsrc=aw.ds)
+[WorkSpace trello]()
