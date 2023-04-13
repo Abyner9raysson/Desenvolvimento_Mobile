@@ -1,4 +1,4 @@
-# 1º AVALIAÇÃO | Desenvolvimento para Dispositivos Móveis
+# AV1 | Desenvolvimento para Dispositivos Móveis
 
 - Centro Universitário Maurício de Nassau (UNINASSAU)
 
