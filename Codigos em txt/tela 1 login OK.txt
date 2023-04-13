@@ -27,7 +27,7 @@ export default function App() {
         <>
           <View style={styles.logoContainer}>
             <MaterialCommunityIcons name="shield-crown" size={64} color="black" />
-            <Text style={styles.logoText}>barber shop</Text>
+            <Text style={styles.logoText}>MG barber shop</Text>
           </View>
           <View style={styles.iconInput}>
             <AntDesign name="user" size={24} color="black" />
