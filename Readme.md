@@ -1,4 +1,14 @@
-# 1º AVALIAÇÃO
+# 1º AVALIAÇÃO | Desenvolvimento para Dispositivos Móveis
+
+- Centro Universitário Maurício de Nassau (UNINASSAU)
+=============
+- Professor: Augusto César Oliveira
+=============
+- Disciplina: Desenvolvimento para Dispositivos Móveis
+=============
+- Equipe: Abyner Raysson e Weverton Rafael
+=============
+
 
 ### Descrição do Projeto
 
@@ -40,10 +50,4 @@ Os clientes poderiam avaliar os serviços prestados, dando feedbacks e sugestõe
 Uma tela de login e senha, onde o cliente pode digitar o seu e-mail e a sua senha ou criar uma conta nova. Uma tela de agendamento, onde o cliente pode escolher o serviço, o profissional, o horário e o preço. Uma tela de confirmação, onde o cliente pode ver os detalhes do seu agendamento e confirmar ou cancelar. Uma tela de avaliação, onde o cliente pode dar uma nota e um comentário sobre o serviço prestado e o profissional. Uma tela de perfil, onde o cliente pode ver os seus dados e as suas avaliações.
 
 
-
-### App
-- Readme.md em construção
-- Aplicação em construção
-
-### React Native
 
