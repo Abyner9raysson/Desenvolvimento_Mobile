@@ -1,13 +1,13 @@
 # 1º AVALIAÇÃO | Desenvolvimento para Dispositivos Móveis
 
 - Centro Universitário Maurício de Nassau (UNINASSAU)
-=============
+
 - Professor: Augusto César Oliveira
-=============
+
 - Disciplina: Desenvolvimento para Dispositivos Móveis
-=============
+
 - Equipe: Abyner Raysson e Weverton Rafael
-=============
+
 
 
 ### Descrição do Projeto
