@@ -33,7 +33,7 @@ export default function App() {
             <AntDesign name="user" size={24} color="black" />
             <TextInput
               style={styles.input}
-              placeholder="Username"
+              placeholder="Usuário"
               onChangeText={setUsername}
               value={username}
             />
@@ -42,7 +42,7 @@ export default function App() {
             <Ionicons name="key-outline" size={24} color="black" />
             <TextInput
               style={styles.input}
-              placeholder="Password"
+              placeholder="Senha"
               secureTextEntry={true}
               onChangeText={setPassword}
               value={password}
