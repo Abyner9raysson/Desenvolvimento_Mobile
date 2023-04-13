@@ -56,7 +56,7 @@ Uma tela de login e senha, onde o cliente pode digitar o seu e-mail e a sua senh
 `JavaScrip`
 
 #### Ferramentas utilizadas
-`Git` `GitHub` `VScode` `Expo Go`
+`Git` `GitHub` `VScode` `Expo Go` `Trello`
 
 
 
