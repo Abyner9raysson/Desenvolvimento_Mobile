@@ -52,9 +52,13 @@ Uma tela de login e senha, onde o cliente pode digitar o seu e-mail e a sua senh
 
 
 
-#### FrameWork Utilizado
+#### FrameWork utilizado
 `React Native`
 
 
 #### Linguagem utilizada
 `JavaScrip`
+
+
+#### Ferramentas utilizadas
+`Git` `GitHub`
