@@ -60,9 +60,10 @@ Uma tela de login e senha, onde o cliente pode digitar o seu e-mail e a sua senh
 
 
 
-### Organização dos arquivos
+### Organização das pastas e arquivos
 
-- `pasta Codigos em txt` estão o código das 3 telas
-- `pasta Tela 1 - Login` arquivos React native da tela 1
-- `pasta Tela 2 - Serviços Fronecidos` arquivos React native da tela 2
-- `pasta Tela 3 - Forma de pagamento` arquivo JS da tela 3
+- `pasta Codigos em txt` estão o código das 3 telas;
+- `pasta Tela 1 - Login` arquivos React native da tela 1;
+- `pasta Tela 2 - Serviços Fronecidos` arquivos React native da tela 2;
+- `pasta Tela 3 - Forma de pagamento` arquivo JS da tela 3;
+- `artigo do projeto.txt` resumo do projeto contendo sua descrição.
