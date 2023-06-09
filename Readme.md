@@ -71,7 +71,7 @@ Uma tela de login e senha, onde o cliente pode digitar o seu e-mail e a sua senh
 ### 2ª Etapa do projeto
 
 na segunda etapa, foi solicitado implementarmos as rotações de telas/navegação entre as telas, pelo recurso `React navigation`
-também foi solicitado a implementação com o banco de dados através do Beekeep studio, com um servidor rodando pelo Docker. nessa parte
+também foi solicitado a implementação com o banco de dados através do `Beekeep studio`, com um servidor rodando no `Docker`. nessa parte
 encontramos algumas dificuldades para conectar a app react com o BD, mas conseguimos deixar o servidos rodando.  
 
 ### Link Trello
