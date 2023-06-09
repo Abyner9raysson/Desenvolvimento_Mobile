@@ -68,7 +68,7 @@ Uma tela de login e senha, onde o cliente pode digitar o seu e-mail e a sua senh
 - `pasta Tela 3 - Forma de pagamento` arquivo JS da tela 3;
 - `artigo do projeto.txt` resumo do projeto contendo sua descrição.
 
-### 2ª Etapa do projeto
+# 2ª Etapa do projeto
 
 na segunda etapa, foi solicitado implementarmos as rotações de telas/navegação entre as telas, pelo recurso `React navigation`
 também foi solicitado a implementação com o banco de dados através do `Beekeep studio`, com um servidor rodando no `Docker`. nessa parte
